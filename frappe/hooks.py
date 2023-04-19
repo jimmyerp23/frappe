@@ -1,6 +1,6 @@
 from . import __version__ as app_version
 
-app_name = "frappe"
+app_name = "金标财税"
 app_title = "Frappe Framework"
 app_publisher = "Frappe Technologies"
 app_description = "Full stack web framework with Python, Javascript, MariaDB, Redis, Node"
@@ -22,6 +22,11 @@ after_install = "frappe.utils.install.after_install"
 page_js = {"setup-wizard": "public/js/frappe/setup_wizard.js"}
 
 # website
+website_context = {
+	"favicon": "/assets/frappe/images/frappe-framework-logo-jin.png",
+	"splash_image": "/assets/frappe/images/frappe-framework-logo-jin.png"
+}
+
 app_include_js = [
 	"libs.bundle.js",
 	"desk.bundle.js",

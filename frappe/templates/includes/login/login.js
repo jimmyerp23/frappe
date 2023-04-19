@@ -167,7 +167,7 @@ login.signup = function () {
 
 // Login
 login.call = function (args, callback) {
-	login.set_status('{{ _("Verifying...") }}', 'blue');
+	login.set_status('{{ _("验证中...") }}', 'blue');
 
 	return frappe.call({
 		type: "POST",
