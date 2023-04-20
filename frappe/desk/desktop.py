@@ -409,12 +409,15 @@ def get_workspace_sidebar_items():
 	pages = []
 	private_pages = []
 
+	# Customer workspace filter
+	cwf = ["Users", "Accounting", "Buying", "CRM", "Selling", "Stock"]
+
 	# Filter Page based on Permission
 	for page in all_pages:
 		try:
 			workspace = Workspace(page, True)
-			# Only show Users workspace
-			if page.get("name") != "Users":
+			# Workspace filter
+			if page.get("name") not in cwf:
 				continue
 			if has_access or workspace.is_permitted():
 				if page.public and (has_access or not page.is_hidden):
