@@ -413,6 +413,9 @@ def get_workspace_sidebar_items():
 	for page in all_pages:
 		try:
 			workspace = Workspace(page, True)
+			# Only show Users workspace
+			if page.get("name") != "Users":
+				continue
 			if has_access or workspace.is_permitted():
 				if page.public and (has_access or not page.is_hidden):
 					pages.append(page)
