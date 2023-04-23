@@ -1,6 +1,6 @@
 from . import __version__ as app_version
 
-app_name = "金标财税"
+app_name = "金字财税"
 app_title = "Frappe Framework"
 app_publisher = "Frappe Technologies"
 app_description = "Full stack web framework with Python, Javascript, MariaDB, Redis, Node"
