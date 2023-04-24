@@ -351,19 +351,19 @@ frappe.ui.Slides = class Slides {
 		$(`<div class="row">
 			<div class="col-sm-4 text-left prev-div">
 				<button class="prev-btn btn btn-secondary btn-sm" tabindex="0">${__(
-					"Previous",
+					"上一步",
 					null,
 					"Go to previous slide"
 				)}</button>
 			</div>
 			<div class="col-sm-8 text-right next-div">
 				<button class="complete-btn btn btn-sm primary">${__(
-					"Complete Setup",
+					"设置完成",
 					null,
 					"Finish the setup wizard"
 				)}</button>
 				<button class="next-btn btn btn-default btn-sm" tabindex="0">${__(
-					"Next",
+					"下一步",
 					null,
 					"Go to next slide"
 				)}</button>

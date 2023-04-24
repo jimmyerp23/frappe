@@ -348,22 +348,27 @@ frappe.setup.slides_settings = [
 	{
 		// Welcome (language) slide
 		name: "welcome",
-		title: __("Welcome"),
+		//title: __("Welcome"),
+		title: "欢迎",
 
 		fields: [
 			{
 				fieldname: "language",
-				label: __("Your Language"),
+				//label: __("Your Language"),
+				label: "语言",
 				fieldtype: "Autocomplete",
-				placeholder: __("Select Language"),
+				//placeholder: __("Select Language"),
+				placeholder: "选择语言",
 				default: "English",
 				reqd: 1,
 			},
 			{
 				fieldname: "country",
-				label: __("Your Country"),
+				//label: __("Your Country"),
+				label: "国家",
 				fieldtype: "Autocomplete",
-				placeholder: __("Select Country"),
+				//placeholder: __("Select Country"),
+				placeholder: "选择国家",
 				reqd: 1,
 			},
 			{
@@ -371,16 +376,20 @@ frappe.setup.slides_settings = [
 			},
 			{
 				fieldname: "timezone",
-				label: __("Time Zone"),
-				placeholder: __("Select Time Zone"),
+				//label: __("Time Zone"),
+				label: "时区",
+				// placeholder: __("Select Time Zone"),
+				placeholder: "选择时区",
 				fieldtype: "Select",
 				reqd: 1,
 			},
 			{ fieldtype: "Column Break" },
 			{
 				fieldname: "currency",
-				label: __("Currency"),
-				placeholder: __("Select Currency"),
+				//label: __("Currency"),
+				label: "货币",
+				//placeholder: __("Select Currency"),
+				placeholder: "选择货币",
 				fieldtype: "Select",
 				reqd: 1,
 			},
@@ -418,22 +427,30 @@ frappe.setup.slides_settings = [
 	{
 		// Profile slide
 		name: "user",
-		title: __("Let's setup your account"),
+		//title: __("Let's setup your account"),
+		title: "设置账号",
 		icon: "fa fa-user",
 		fields: [
 			{
 				fieldname: "full_name",
-				label: __("Full Name"),
+				//label: __("Full Name"),
+				label: "全名",
 				fieldtype: "Data",
 				reqd: 1,
 			},
 			{
 				fieldname: "email",
-				label: __("Email Address") + " (" + __("Will be your login ID") + ")",
+				//label: __("Email Address") + " (" + __("Will be your login ID") + ")",
+				label: "Email地址（登录ID）",
 				fieldtype: "Data",
 				options: "Email",
 			},
-			{ fieldname: "password", label: __("Password"), fieldtype: "Password" },
+			{ 
+				fieldname: "password", 
+				//label: __("Password"), 
+				label: "密码",
+				fieldtype: "Password",
+			},
 		],
 
 		onload: function (slide) {

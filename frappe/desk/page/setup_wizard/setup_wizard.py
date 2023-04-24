@@ -18,7 +18,7 @@ def get_setup_stages(args):
 	# That is done by frappe after successful completion of all stages
 	stages = [
 		{
-			"status": "Updating global settings",
+			"status": "更新全局设置",
 			"fail_msg": "Failed to update global settings",
 			"tasks": [
 				{"fn": update_global_settings, "args": args, "fail_msg": "Failed to update global settings"}
